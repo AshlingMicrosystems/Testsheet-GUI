@@ -1,0 +1,171 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<style>
+table.center {
+  margin-left: auto; 
+  margin-right: auto;
+  text-align:center;
+}
+.myDiv {
+  border: 5px outset red;
+  background-color: lightblue;
+  text-align: center;
+}
+</style>
+
+<body>
+<form>
+<div class="myDiv">
+<h1>Testing Status Windows</h1>
+</div>
+
+<div>
+<table class="center">
+<tr>
+<td style="color:Black; font-size:20px;"> Total Test Case </td></tr>
+
+<tr><td> <img src="{% static 'images/chart_win/TotalTestCases.png'%}" alt="Image" width="450" height="350"></td></tr>
+
+</table>
+
+<table class="center">
+<tr>
+<td style="color:Black; font-size:15px;"> Base Functionality </td>
+<td style="color:Black; font-size:15px;"> Abnormal</td>
+<td style="color:Black; font-size:15px;"> Performance </td> </tr>
+
+<tr>
+<td> <img src="{% static 'images/chart_win/Base Functionality.png'%}" alt="Image" width="450" height="350"></td>
+<td> <img src="{% static 'images/chart_win/Abnormal.png'%}" alt="Image" width="450" height="350"></td>
+<td> <img src="{% static 'images/chart_win/Performance.png'%}" alt="Image" width="450" height="350"></td>
+</tr>
+
+<tr>
+<td style="color:Black; font-size:15px;"> Stress </td>
+<td style="color:Black; font-size:15px;"> Installation </td>
+<td style="color:Black; font-size:15px;"> Error Handling </td>
+</tr>
+
+<tr>
+<td> <img src="{% static 'images/chart_win/Stress.png'%}" alt="Image" width="450" height="350"></td>
+<td> <img src="{% static 'images/chart_win/Installation.png'%}" alt="Image" width="450" height="350"></td>
+<td> <img src="{% static 'images/chart_win/ErrorHandling.png'%}" alt="Image" width="450" height="350"></td>
+</tr>
+
+<tr>
+<td style="color:Black; font-size:15px;"> QF Test-RiscFree-Nios V/M TC </td>
+<td style="color:Black; font-size:15px;"> QF Test-RiscFree-Global Variable View </td>
+<td style="color:Black; font-size:15px;"> QF Test-RiscFree-Multicore </td>
+</tr>
+
+<tr>
+<td> <img src="{% static 'images/chart_win/QFTest-RiscFree-Nios-V TC.png'%}" alt="Test status" width="450" height="350"></td>
+<td> <img src="{% static 'images/chart_win/QFTest-RiscFree-Global-Var-View.png'%}" alt="Test status" width="450" height="350"></td>
+<td> <img src="{% static 'images/chart_win/QFTest-RiscFree-Multicore.png'%}" alt="Test status" width="450" height="350"></td>
+</tr>
+
+<tr>
+<td style="color:Black; font-size:15px;"> QF Test-RiscFree-Scanchain TC</td>
+<td style="color:Black; font-size:15px;"> QF Test-RiscFree-QEMU TC </td>
+<td style="color:Black; font-size:15px;"> GDB Script-GDB Server-Nios V/M TC</td>
+</tr>
+
+<tr>
+<td> <img src="{% static 'images/chart_win/QFTest-RiscFree-Scanchain-TC.png'%}" alt="Test status" width="450" height="350"></td>
+<td> <img src="{% static 'images/chart_win/QFTest-RiscFree-QEMU-TC.png'%}" alt="Test status" width="450" height="350"></td>
+<td> <img src="{% static 'images/chart_win/GDB-script-GDB-server-Nios-V-TC.png'%}" alt="Test status" width="450" height="350"></td>
+</tr>
+  
+<tr>
+<td style="color:Black; font-size:15px;"> Open-Source-Update  </td>
+<td style="color:Black; font-size:15px;"> Manual-RiscFree-Target</td>
+<td style="color:Black; font-size:15px;"> QF Test-RiscFree-Arm TC </td>
+</tr>
+
+<tr>
+<td> <img src="{% static 'images/chart_win/Open-Source-Update-TC.png'%}" alt="Test status" width="450" height="350"></td>
+<td> <img src="{% static 'images/chart_win/Manual-RiscFree-Target.png'%}" alt="Test status" width="450" height="350"></td>
+<td> <img src="{% static 'images/chart_win/QFTest-Riscfree-Arm-TC.png'%}" alt="Test status" width="450" height="350"></td>
+</tr>
+</table>
+</div>
+
+<div class="myDiv">
+<h1>Testing Status Linux</h1>
+</div>
+
+<table class="center">
+<tr>
+<td style="color:Black; font-size:20px;"> Total Test Case </td></tr>
+  
+<tr><td> <img src="{% static 'images/chart_lin/TotalTestCases.png'%}" alt="Image" width="450" height="350"></td></tr>
+
+</table>
+   
+<table class="center">
+
+<tr>
+<td style="color:Black; font-size:15px;"> Base Functionality </td>
+<td style="color:Black; font-size:15px;"> Abnormal</td>
+<td style="color:Black; font-size:15px;"> Performance </td> </tr>
+
+<tr>
+<td> <img src="{% static 'images/chart_lin/Base Functionality.png'%}" alt="Image" width="450" height="350"></td>
+<td> <img src="{% static 'images/chart_lin/Abnormal.png'%}" alt="Image" width="450" height="350"></td>
+<td> <img src="{% static 'images/chart_lin/Performance.png'%}" alt="Image" width="450" height="350"></td>
+</tr>
+  
+<tr>
+<td style="color:Black; font-size:15px;"> Stress </td>
+<td style="color:Black; font-size:15px;"> Installation </td>
+<td style="color:Black; font-size:15px;"> Error Handling </td>
+</tr>
+
+<tr>
+<td> <img src="{% static 'images/chart_lin/Stress.png'%}" alt="Image" width="450" height="350"></td>
+<td> <img src="{% static 'images/chart_lin/Installation.png'%}" alt="Image" width="450" height="350"></td>
+<td> <img src="{% static 'images/chart_lin/ErrorHandling.png'%}" alt="Image" width="450" height="350"></td>
+</tr>
+
+<tr>
+<td style="color:Black; font-size:15px;"> QF Test-RiscFree-Nios V/M TC </td>
+<td style="color:Black; font-size:15px;"> QF Test-RiscFree-Global Variable View </td>
+<td style="color:Black; font-size:15px;"> QF Test-RiscFree-Multicore </td>
+</tr>
+
+<tr>
+<td> <img src="{% static 'images/chart_lin/QFTest-RiscFree-Nios-V TC.png'%}" alt="Test status" width="450" height="350"></td>
+<td> <img src="{% static 'images/chart_lin/QFTest-RiscFree-Global-Var-View.png'%}" alt="Test status" width="450" height="350"></td>
+<td> <img src="{% static 'images/chart_lin/QFTest-RiscFree-Multicore.png'%}" alt="Test status" width="450" height="350"></td>
+</tr>
+
+<tr>
+<td style="color:Black; font-size:15px;"> QF Test-RiscFree-Scanchain TC</td>
+<td style="color:Black; font-size:15px;"> QF Test-RiscFree-QEMU TC </td>
+<td style="color:Black; font-size:15px;"> GDB Script-GDB Server-Nios V/M TC</td>
+</tr>
+
+<tr>
+<td> <img src="{% static 'images/chart_lin/QFTest-RiscFree-Scanchain-TC.png'%}" alt="Test status" width="450" height="350"></td>
+<td> <img src="{% static 'images/chart_lin/QFTest-RiscFree-QEMU-TC.png'%}" alt="Test status" width="450" height="350"></td>
+<td> <img src="{% static 'images/chart_lin/GDB-script-GDB-server-Nios-V-TC.png'%}" alt="Test status" width="450" height="350"></td>
+</tr>
+
+<tr>
+<td style="color:Black; font-size:15px;"> Open-Source-Update  </td>
+<td style="color:Black; font-size:15px;"> Manual-RiscFree-Target</td>
+<td style="color:Black; font-size:15px;"> QF Test-RiscFree-Arm TC </td>
+</tr>
+
+<tr>
+<td> <img src="{% static 'images/chart_lin/Open-Source-Update-TC.png'%}" alt="Test status" width="450" height="350"></td>
+<td> <img src="{% static 'images/chart_lin/Manual-RiscFree-Target.png'%}" alt="Test status" width="450" height="350"></td>
+<td> <img src="{% static 'images/chart_lin/QFTest-Riscfree-Arm-TC.png'%}" alt="Test status" width="450" height="350"></td>
+</tr>
+</table>
+</div>
+</form>
+</body>
+</html>
